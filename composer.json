@@ -1,0 +1,42 @@
+{
+    "name": "pedromrv/oma-cesc",
+    "description": "",
+    "keywords": [
+        "pedromrv",
+        "oma-cesc"
+    ],
+    "homepage": "https://github.com/pedromrv/oma-cesc",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pedro",
+            "email": "prodriguez@omatech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pedromrv\\OmaCesc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pedromrv\\OmaCesc\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
